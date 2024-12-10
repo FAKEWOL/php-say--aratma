@@ -1,0 +1,14 @@
+ $sayilar=array();
+  for($i=1;$i<=10;$i++){
+  array_unshift($sayilar,rand(1,10));
+  }
+  echo"<pre>";
+  print_r($sayilar);
+  $kontrol=array_search(2,$sayilar);
+  if($kontrol!=FALSE){
+  echo $sayilar[$kontrol];
+  }
+  else{
+    echo "2 sayisi yoktur";
+  }
+    ?>
